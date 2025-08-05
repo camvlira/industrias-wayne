@@ -38,7 +38,7 @@ WAYNE/
 - **Login** com validação JWT
 - **Controle de acesso**:
   - Admin: acesso completo
-  - Gerente e Funcionário: apenas acesso de leitura
+  - Gerente e Funcionário: apenas leitura
 - **Painel de Controle**:
   - Visualização de recursos
   - Adição e remoção de recursos
@@ -47,16 +47,16 @@ WAYNE/
 
 ## 5. Instruções para Execução
 
-### a) Backend
+### Backend
 
 1. Acesse a pasta do projeto.
 2. Ative o ambiente virtual.
 3. Instale as dependências:
 (pip install -r requirements.txt)
 4. Inicie o backend:
-python app.py
+(python app.py)
 
-### b) Frontend
+### Frontend
 
 1. Abra o arquivo index.html no navegador.
 
