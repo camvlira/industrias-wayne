@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title> Painel de Controle de Recursos - Indústrias Wayne</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <video autoplay muted loop>
+    <source src="https://brucewaynex.com/cdn/shop/videos/c/vp/032bca4f8c4c4cc7bda6c38eead99bff/032bca4f8c4c4cc7bda6c38eead99bff.HD-1080p-7.2Mbps-28333370.mp4?v=0" type="video/mp4"/>
+  </video>
+
+  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Wayne_Enterprises_%28DC_Comics_fictional_logo%29.png/330px-Wayne_Enterprises_%28DC_Comics_fictional_logo%29.png" alt="Logo Wayne Enterprises">
+
+  <div id="dashboard">
+    <button id="logout-btn" onclick="logout()">Sair</button>
+    <h2>Bem-vindo, <span id="nome-usuario"></span></h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Recursos Cadastrados</h3>
+        <div id="total-recursos" class="value">0</div>
+      </div>
+
+      <div class="card">
+        <h3>Funcionários Online</h3>
+        <div id="total-funcionarios" class="value">4</div>
+      </div>
+
+      <div class="card">
+        <h3>Últimas Atividades</h3>
+        <div id="atividades"><ul id="lista-atividades"></ul></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Distribuição de Recursos</h3>
+      <canvas id="grafico-recursos"></canvas>
+    </div>
+
+    <h3>Gerenciar Recursos</h3>
+    <div id="acoes-admin">
+      <input type="text" id="nome-recurso" placeholder="Nome" />
+      <select id="tipo-recurso">
+        <option>Equipamento</option>
+        <option>Veículo</option>
+        <option>Dispositivo</option>
+      </select>
+      <input type="text" id="descricao" placeholder="Descrição" />
+      <button onclick="adicionarRecurso()">Adicionar</button>
+    </div>
+
+    <div id="lista-recursos"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
